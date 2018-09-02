@@ -13,6 +13,6 @@ function destructivelyUpdateDriverWithKeyAndValue(driver, key, value){
 }
 
 function deleteFromDriverByKey(driver, key){
-  const newDriver = Object.assign({}, driver, { [key]: value });
+  let newDriver = Object.assign({}, driver, { [key]: value });
   delete newDriver[key];
 }
